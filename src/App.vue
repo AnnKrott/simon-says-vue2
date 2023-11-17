@@ -238,7 +238,7 @@ h2 {
 }
 
 .active {
-  filter: saturate(4);
+  filter: invert(1);
 }
 
 .selected {
