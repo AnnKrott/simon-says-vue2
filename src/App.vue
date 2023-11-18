@@ -118,14 +118,14 @@ export default {
         setTimeout(() => {
           this.resetState()
           this.correctChoice = false
-        }, 400)
+        }, 300)
         
         setTimeout(() => {
           this.sequenceToGuess.shift()
           if (this.sequenceToGuess.length === 0) {
             this.goToNextLevel()
           }
-        }, 1000)
+        }, 600)
 
       } else {
         alert(`Вы проиграли! ${this.score}`)
@@ -144,7 +144,6 @@ export default {
         if (this.sequenceToGuess.length !== 0) {
           setTimeout(() => {
             this.startSequence(this.sequenceToGuess[0]);
-            // this.changeDifficulty(value)
           }, this.difficulty);
         } else {
           this.sequenceToGuess = [...this.sequence];
